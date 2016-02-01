@@ -5,17 +5,6 @@ export class NavBar {
   @bindable router = null;
   @bindable navType = null;
 
-  navTypes = [
-    'PRIMARY',
-    'SECONDARY'
-  ];
-
-  constructor() {
-    // this.navType = null;
-    // debugger;
-    console.log('nav called');
-  }
-
   @computedFrom('navType')
   get navClass () {
     let cssClass = null;
