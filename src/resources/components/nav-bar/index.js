@@ -11,11 +11,11 @@ export class NavBar {
 
     switch (this.navType) {
       case 'SECONDARY':
-        cssClass = 'subnav isolate';
+        cssClass = 'nav-pills';
         break;
       case 'PRIMARY':
       default:
-        cssClass = 'navbar';
+        cssClass = 'navbar-nav';
         break;
     }
 
