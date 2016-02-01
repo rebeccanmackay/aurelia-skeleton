@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <nav class="navbar navbar-default navbar-fixed-top" >
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse">
         <span class="sr-only">Toggle Navigation</span>
@@ -14,10 +14,9 @@
     </div>
 
     <div class="collapse navbar-collapse" id="skeleton-navigation-navbar-collapse">
-      <h1>${navClass}</h1>
       <ul class="nav navbar-nav ${navClass}">
         <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
-          <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href.bind="row.href">${row.title}</a>
+          <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href.bind="row.href">${navType} - ${row.title}</a>
         </li>
       </ul>
 
