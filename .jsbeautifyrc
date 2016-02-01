@@ -1,0 +1,7 @@
+{
+  "js": {
+    "jslint_happy": false,
+    "keep_array_indentation": false,
+    "space_before_conditional": false
+    }
+}
